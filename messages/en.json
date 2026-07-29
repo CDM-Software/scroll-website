@@ -18,7 +18,7 @@
     "ctaPrimary": "Get it on Google Play",
     "ctaSecondary": "Become a master",
     "fine": "Free · Android · iOS — coming soon",
-    "phoneSlot": "app screenshot: games feed · 390×844"
+    "phoneSlot": "ScRoll app screen: games feed"
   },
   "how": {
     "kicker": "How it works",
@@ -28,17 +28,17 @@
       {
         "title": "Find a game",
         "text": "A feed of games with filters by system, genre, format and price. D&D 5e or Cyberpunk RED, one-shot or campaign — with a beginner-friendly badge.",
-        "slot": "app screenshot: search filters"
+        "slot": "ScRoll app screen: game search filters"
       },
       {
         "title": "Apply",
         "text": "The master approves — and you're in the party. No seats? The waitlist moves you up automatically, and you see your status in real time.",
-        "slot": "app screenshot: game application"
+        "slot": "ScRoll app screen: game page and application"
       },
       {
         "title": "Play",
         "text": "The party chat is created automatically. Agree on the time — and get to the table, online or in person.",
-        "slot": "app screenshot: party chat"
+        "slot": "ScRoll app screen: party chat"
       }
     ]
   },
@@ -47,10 +47,22 @@
     "title": "Find the game that fits",
     "lead": "Everything you need to get to the table — from search to the post-session review.",
     "cards": [
-      { "title": "Feed with filters", "text": "System, genre, format, price and date. Free-only, beginner-friendly — slice it your way." },
-      { "title": "Applications & waitlist", "text": "Apply — the master approves — you're in. No seats? The waitlist moves you up automatically." },
-      { "title": "Party chats", "text": "The game chat is created automatically and runs in real time. Plus private and group chats." },
-      { "title": "Honest ratings", "text": "1–5 scores and reviews after every game. Trust is built on real play, not promises." }
+      {
+        "title": "Feed with filters",
+        "text": "System, genre, format, price and date. Free-only, beginner-friendly — slice it your way."
+      },
+      {
+        "title": "Applications & waitlist",
+        "text": "Apply — the master approves — you're in. No seats? The waitlist moves you up automatically."
+      },
+      {
+        "title": "Party chats",
+        "text": "The game chat is created automatically and runs in real time. Plus private and group chats."
+      },
+      {
+        "title": "Honest ratings",
+        "text": "1–5 scores and reviews after every game. Trust is built on real play, not promises."
+      }
     ],
     "gameCard": {
       "badge": "Adventure",
@@ -72,9 +84,21 @@
     "title": "Gather your party without the chaos",
     "lead": "Audience, organizing tools and reputation — in one place.",
     "cards": [
-      { "num": "01 / create", "title": "Publish games", "text": "Describe your campaign or one-shot, set the format and price. Draft → moderation → live in the feed." },
-      { "num": "02 / manage", "title": "Applications under control", "text": "Approve players, run the waitlist, build the roster. No spreadsheets and no five messengers." },
-      { "num": "03 / grow", "title": "Reputation & verification", "text": "A profile with player ratings and reviews. Platform verification is a mark of quality for new players." }
+      {
+        "num": "01 / create",
+        "title": "Publish games",
+        "text": "Describe your campaign or one-shot, set the format and price. Draft → moderation → live in the feed."
+      },
+      {
+        "num": "02 / manage",
+        "title": "Applications under control",
+        "text": "Approve players, run the waitlist, build the roster. No spreadsheets and no five messengers."
+      },
+      {
+        "num": "03 / grow",
+        "title": "Reputation & verification",
+        "text": "A profile with player ratings and reviews. Platform verification is a mark of quality for new players."
+      }
     ],
     "soonTag": "soon",
     "soonText": "Game monetization: session payments and prepayment discounts — masters will earn from their campaigns."
@@ -83,14 +107,35 @@
     "kicker": "Trust",
     "title": "Cancelled campaigns are not welcome here",
     "items": [
-      { "bold": "Game and master moderation.", "text": "Every game is reviewed before it goes live." },
-      { "bold": "Master verification.", "text": "The platform's mark for those you can trust with the table." },
-      { "bold": "Reviews from real players.", "text": "Ratings are collected only after played sessions." }
+      {
+        "bold": "Game and master moderation.",
+        "text": "Every game is reviewed before it goes live."
+      },
+      {
+        "bold": "Master verification.",
+        "text": "The platform's mark for those you can trust with the table."
+      },
+      {
+        "bold": "Reviews from real players.",
+        "text": "Ratings are collected only after played sessions."
+      }
     ],
     "facts": [
-      { "value": "100", "accent": "%", "label": "of games are moderated before publishing" },
-      { "value": "1–5", "accent": "", "label": "master rating after every session" },
-      { "value": "0", "accent": "₽", "label": "for finding games and applying — always" }
+      {
+        "value": "100",
+        "accent": "%",
+        "label": "of games are moderated before publishing"
+      },
+      {
+        "value": "1–5",
+        "accent": "",
+        "label": "master rating after every session"
+      },
+      {
+        "value": "0",
+        "accent": "₽",
+        "label": "for finding games and applying — always"
+      }
     ]
   },
   "community": {
@@ -98,9 +143,21 @@
     "title": "More than game search",
     "lead": "Events, editorial guides and platform news — right in the app.",
     "cards": [
-      { "badge": "Event", "title": "Talks & meetups", "text": "Contests, talks and community meetups — with participation and discussions." },
-      { "badge": "Guide", "title": "Guides for beginners", "text": "How to pick a system, build a character and not fear your first roll." },
-      { "badge": "News", "title": "Platform news", "text": "What's new in ScRoll: features, events and community life." }
+      {
+        "badge": "Event",
+        "title": "Talks & meetups",
+        "text": "Contests, talks and community meetups — with participation and discussions."
+      },
+      {
+        "badge": "Guide",
+        "title": "Guides for beginners",
+        "text": "How to pick a system, build a character and not fear your first roll."
+      },
+      {
+        "badge": "News",
+        "title": "Platform news",
+        "text": "What's new in ScRoll: features, events and community life."
+      }
     ]
   },
   "roadmap": {
@@ -108,18 +165,42 @@
     "title": "The hero's path is already mapped",
     "lead": "Play, collect reviews and climb the ranks — gamification is in the works.",
     "rankLabel": "rank {num}",
-    "ranks": ["Neophyte", "Keeper", "Druid", "Archdruid"],
-    "extras": ["+ achievements & badges", "+ quests", "+ leaderboards"]
+    "ranks": [
+      "Neophyte",
+      "Keeper",
+      "Druid",
+      "Archdruid"
+    ],
+    "extras": [
+      "+ achievements & badges",
+      "+ quests",
+      "+ leaderboards"
+    ]
   },
   "faq": {
     "kicker": "FAQ",
     "title": "Quick answers",
     "items": [
-      { "q": "Is it free?", "a": "Yes. Registration, game search, applications and chats are free. Masters may charge for their games — the price is always visible on the card before you apply." },
-      { "q": "How do I become a master?", "a": "Create a game in the app: describe the campaign, set the format and price. After moderation it appears in the feed, and player applications come to you." },
-      { "q": "Which systems are supported?", "a": "Any TTRPG: D&D 5e, Cyberpunk RED and more. The system is shown on the game card and powers the feed filter." },
-      { "q": "Can beginners play?", "a": "Absolutely. Look for the beginner-friendly badge in the feed and read the guides — they'll help you build your first character and feel at home at the table." },
-      { "q": "Where do I download it?", "a": "On Google Play. The iOS version is coming later — follow the news in the app and on social media." }
+      {
+        "q": "Is it free?",
+        "a": "Yes. Registration, game search, applications and chats are free. Masters may charge for their games — the price is always visible on the card before you apply."
+      },
+      {
+        "q": "How do I become a master?",
+        "a": "Create a game in the app: describe the campaign, set the format and price. After moderation it appears in the feed, and player applications come to you."
+      },
+      {
+        "q": "Which systems are supported?",
+        "a": "Any TTRPG: D&D 5e, Cyberpunk RED and more. The system is shown on the game card and powers the feed filter."
+      },
+      {
+        "q": "Can beginners play?",
+        "a": "Absolutely. Look for the beginner-friendly badge in the feed and read the guides — they'll help you build your first character and feel at home at the table."
+      },
+      {
+        "q": "Where do I download it?",
+        "a": "On Google Play. The iOS version is coming later — follow the news in the app and on social media."
+      }
     ]
   },
   "download": {
@@ -132,7 +213,11 @@
     "tagline": "The tabletop RPG platform — from anywhere in the world.",
     "product": "Product",
     "help": "Help",
-    "helpLinks": ["Support", "Terms of Service", "Privacy Policy"],
+    "helpLinks": [
+      "Support",
+      "Terms of Service",
+      "Privacy Policy"
+    ],
     "social": "Social",
     "rights": "© {year} ScRoll · Tabletop role-playing games",
     "madeWith": "made with a d20 in the pocket"

@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 
-import { ImageSlot } from './ImageSlot';
 import { Rise } from './Rise';
+import { Screenshot } from './Screenshot';
 
 const PLAY_ICON = (
   <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true">
@@ -17,6 +17,9 @@ const FEATURE_ICONS = [
 ];
 
 const COMMUNITY_BADGE_COLORS = ['var(--color-badge-event)', 'var(--color-badge-guide)', 'var(--color-badge-news)'];
+
+// Скрины из Figma-макетов (2x): порядок совпадает с шагами how.steps.
+const STEP_SCREENS = ['/screens/filters.png', '/screens/game.png', '/screens/chat.png'];
 
 export function Nav() {
   const t = useTranslations('nav');
@@ -59,7 +62,12 @@ export function Hero() {
           <div className="phone">
             <div className="cam" />
             <div className="screen">
-              <ImageSlot label={t('phoneSlot')} />
+              <Screenshot
+                src="/screens/feed.png"
+                alt={t('phoneSlot')}
+                sizes="(max-width: 720px) 74vw, 310px"
+                priority
+              />
             </div>
             <div className="home" />
           </div>
@@ -88,7 +96,11 @@ export function How() {
               <p>{step.text}</p>
               <div className="shot">
                 <div className="frame">
-                  <ImageSlot label={step.slot} />
+                  <Screenshot
+                    src={STEP_SCREENS[i]}
+                    alt={step.slot}
+                    sizes="(max-width: 900px) 100vw, 360px"
+                  />
                 </div>
               </div>
             </Rise>

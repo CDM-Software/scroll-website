@@ -62,7 +62,7 @@ a:hover { color: var(--t1); }
 .step h3 { margin: 18px 0 8px; font-size: 20px; font-weight: 600; }
 .step p { font-size: 15px; line-height: 1.6; color: var(--t2); text-wrap: pretty; }
 .shot { margin-top: auto; padding-top: 24px; }
-.shot .frame { aspect-ratio: 39/44; border: 1px solid var(--bds); border-radius: 16px; overflow: hidden; background: #0d0d0d; }
+.shot .frame { position: relative; aspect-ratio: 39/44; border: 1px solid var(--bds); border-radius: 16px; overflow: hidden; background: #0d0d0d; }
 .sec { padding: 104px 0; }
 .sec h2 { font-size: clamp(30px, 3.4vw, 40px); font-weight: 700; letter-spacing: -.02em; }
 .sec .lead { margin-top: 14px; color: var(--t2); font-size: 17px; max-width: 56ch; text-wrap: pretty; }
@@ -147,7 +147,6 @@ a:hover { color: var(--t1); }
 .fcol a:hover { color: var(--t1); }
 .fbot { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--bds); display: flex; gap: 16px; align-items: center; flex-wrap: wrap; font: 400 12.5px var(--mono); color: var(--t3); }
 .fbot .sp { flex: 1; }
-.img-slot { width: 100%; height: 100%; min-height: 100%; display: flex; align-items: center; justify-content: center; background: #0d0d0d; color: var(--t3); font: 400 11px var(--mono); text-align: center; padding: 12px; }
 .rise { opacity: 0; transform: translateY(20px); transition: opacity .45s ease-out, transform .45s ease-out; }
 .rise.in { opacity: 1; transform: none; }
 @keyframes pulse { 0%, 100% { opacity: .68; } 50% { opacity: 1; } }
