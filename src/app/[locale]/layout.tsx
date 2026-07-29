@@ -69,7 +69,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${GeistSans.variable} ${GeistMono.variable}`}>
-      <body>
+      {/* suppressHydrationWarning: защитные расширения (Bitdefender и т.п.)
+          штампуют DOM атрибутами до гидрейшна — это их шум, не наш баг. */}
+      <body suppressHydrationWarning>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
