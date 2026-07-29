@@ -1,0 +1,27 @@
+<!-- @dsCard group="Foundations" -->
+<style>
+  .ds-shape { background:#171717; color:#FAFAFA; font-family:Geist,Inter,system-ui,sans-serif; padding:28px; border-radius:16px; }
+  .ds-shape h3 { margin:18px 0 10px; font-size:13px; font-weight:600; color:#a1a1aa; text-transform:uppercase; letter-spacing:.06em; }
+  .ds-shape h3:first-child { margin-top:0; }
+  .shape-row { display:flex; gap:16px; align-items:flex-end; flex-wrap:wrap; }
+  .r-demo { background:rgba(255,255,255,0.05); border:1px solid #404040; width:110px; height:64px; display:flex; align-items:center; justify-content:center; font-size:11px; color:#71717a; }
+  .b-demo { background:#171717; width:150px; height:48px; display:flex; align-items:center; justify-content:center; font-size:11px; color:#71717a; border-radius:12px; }
+  .glow-demo { width:100%; height:110px; border-radius:16px; background:#000 radial-gradient(60% 90% at 50% 115%, rgba(21,128,61,.7), transparent 70%); display:flex; align-items:center; justify-content:center; color:#FAFAFA; font-weight:600; letter-spacing:.02em; border:1px solid #27272a; }
+</style>
+<div class="ds-shape">
+  <h3>Радиусы</h3>
+  <div class="shape-row">
+    <div class="r-demo" style="border-radius:8px;">8 — контролы</div>
+    <div class="r-demo" style="border-radius:12px;">12 — кнопки lg</div>
+    <div class="r-demo" style="border-radius:16px;">16 — карточки</div>
+    <div class="r-demo" style="border-radius:999px; width:130px; height:40px;">pill — чипы</div>
+  </div>
+  <h3>Границы</h3>
+  <div class="shape-row">
+    <div class="b-demo" style="border:1px solid #27272a;">subtle #27272a</div>
+    <div class="b-demo" style="border:1px solid #404040;">default #404040</div>
+    <div class="b-demo" style="border:1px solid #525252;">strong #525252</div>
+  </div>
+  <h3>Фирменное свечение (hero, таб-бар приложения)</h3>
+  <div class="glow-demo">green glow · green-700 → transparent · только в hero</div>
+</div>

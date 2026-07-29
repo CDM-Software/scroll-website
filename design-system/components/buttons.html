@@ -1,0 +1,37 @@
+<!-- @dsCard group="Components" -->
+<style>
+  .ds-btn { background:#171717; font-family:Geist,Inter,system-ui,sans-serif; padding:28px; border-radius:16px; display:flex; flex-direction:column; gap:20px; }
+  .ds-btn .line { display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+  .ds-btn .lbl { width:110px; flex:none; font-size:11px; color:#71717a; }
+  .btn { border:none; border-radius:10px; font:600 15px Geist,Inter,system-ui,sans-serif; padding:12px 22px; cursor:pointer; }
+  .btn-primary { background:#15803d; color:#fff; }
+  .btn-primary.hov { background:#16a34a; }
+  .btn-primary.prs { background:#166534; }
+  .btn-secondary { background:rgba(255,255,255,0.05); color:#FAFAFA; border:1px solid #404040; }
+  .btn-ghost { background:transparent; color:#22c55e; }
+  .btn-destructive { background:#ef4444; color:#fff; }
+  .btn-lg { padding:16px 32px; font-size:16px; border-radius:12px; }
+  .btn[disabled] { opacity:.5; cursor:default; }
+  .chip { border-radius:999px; padding:8px 16px; font:500 13px Geist,Inter,system-ui,sans-serif; background:rgba(255,255,255,0.05); color:#a1a1aa; border:1px solid #27272a; }
+  .chip.active { background:#15803d; color:#fff; border-color:#15803d; }
+</style>
+<div class="ds-btn">
+  <div class="line"><span class="lbl">primary</span>
+    <button class="btn btn-primary">Скачать приложение</button>
+    <button class="btn btn-primary hov">hover</button>
+    <button class="btn btn-primary prs">pressed</button>
+    <button class="btn btn-primary" disabled>disabled</button>
+  </div>
+  <div class="line"><span class="lbl">hero CTA (lg)</span>
+    <button class="btn btn-primary btn-lg">Найти игру</button>
+    <button class="btn btn-secondary btn-lg">Стать мастером</button>
+  </div>
+  <div class="line"><span class="lbl">secondary / ghost</span>
+    <button class="btn btn-secondary">Подробнее</button>
+    <button class="btn btn-ghost">Все игры →</button>
+    <button class="btn btn-destructive">Покинуть игру</button>
+  </div>
+  <div class="line"><span class="lbl">chips (фильтры)</span>
+    <span class="chip active">Все</span><span class="chip">D&amp;D 5e</span><span class="chip">Ваншот</span><span class="chip">Бесплатные</span>
+  </div>
+</div>
