@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+
+/*
+ * Дизайн-токены ScRoll — 1:1 с design-system/DESIGN-MODEL.md
+ * (источник: mobile/src/theme). Сайт тёмный по умолчанию, светлой темы нет.
+ * Использование: bg-background, bg-canvas, text-foreground, text-brand,
+ * bg-brand-primary, border-edge, rounded-card и т.д.
+ */
+@theme {
+  /* Фоны и поверхности */
+  --color-canvas: #000000;
+  --color-background: #171717;
+  --color-background-secondary: #262626;
+  --color-surface: rgba(255, 255, 255, 0.05);
+  --color-surface-elevated: #27272a;
+
+  /* Текст */
+  --color-foreground: #fafafa;
+  --color-foreground-secondary: #a1a1aa;
+  --color-foreground-muted: #71717a;
+  --color-foreground-alt: #d4d4d4;
+
+  /* Бренд — зелёный, единственный акцент */
+  --color-brand: #22c55e;
+  --color-brand-primary: #15803d;
+  --color-brand-hover: #16a34a;
+  --color-brand-pressed: #166534;
+  --color-brand-soft: rgba(34, 197, 94, 0.12);
+
+  /* Границы */
+  --color-edge-subtle: #27272a;
+  --color-edge: #404040;
+  --color-edge-strong: #525252;
+
+  /* Семантика */
+  --color-success: #22c55e;
+  --color-error: #ef4444;
+  --color-warning: #f59e0b;
+  --color-info: #0ea5e9;
+  --color-star: #eab308;
+
+  /* Бейджи контента (только метки контента!) */
+  --color-badge-news: #b91c1c;
+  --color-badge-guide: #9333ea;
+  --color-badge-event: #3b82f6;
+  --color-badge-rating: #ca8a04;
+
+  /* Форма */
+  --radius-control: 0.5rem; /* 8 — контролы */
+  --radius-button: 0.75rem; /* 12 — кнопки lg */
+  --radius-card: 1rem;      /* 16 — карточки */
+
+  /* Типографика — Geist через next/font (см. layout) */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Фирменное зелёное свечение — только для hero */
+.brand-glow {
+  background:
+    radial-gradient(60% 90% at 50% 115%, rgba(21, 128, 61, 0.55), transparent 70%),
+    var(--color-canvas);
+}

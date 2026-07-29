@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "ScRoll — tabletop role-playing games from anywhere",
+    "description": "The TTRPG platform: find campaigns and one-shots, apply to games, chat with your party and play with verified game masters.",
+    "ogAlt": "ScRoll — the tabletop RPG platform"
+  },
+  "hero": {
+    "slogan": "Your next campaign starts here",
+    "subtitle": "ScRoll is a platform for tabletop role-playing games: find the right game, apply in one tap and play with verified masters — from anywhere in the world.",
+    "ctaPrimary": "Get it on Google Play",
+    "ctaSecondary": "Become a master"
+  },
+  "footer": {
+    "rights": "© {year} ScRoll. Tabletop role-playing games.",
+    "support": "Support",
+    "terms": "Terms",
+    "privacy": "Privacy"
+  }
+}
