@@ -9,13 +9,13 @@
     "players": "For players",
     "masters": "For masters",
     "faq": "FAQ",
-    "download": "Download"
+    "download": "Join the beta"
   },
   "hero": {
     "kicker": "The tabletop RPG platform",
     "slogan": "Your next campaign starts here",
     "subtitle": "Find games you'll love, apply in one tap and play TTRPGs from anywhere in the world — with verified game masters and honest ratings.",
-    "ctaPrimary": "Get it on Google Play",
+    "ctaPrimary": "Coming soon to Google Play",
     "ctaSecondary": "Become a master",
     "fine": "Free · Android · iOS — coming soon",
     "phoneSlot": "ScRoll app screen: games feed"
@@ -205,9 +205,10 @@
   },
   "download": {
     "title": "Your party is already gathering",
-    "lead": "Download ScRoll and send your first application today.",
-    "cta": "Get it on Google Play",
-    "fine": "Free · Android · iOS — coming soon"
+    "lead": "ScRoll is coming to Google Play soon. Want in before everyone else — join the closed beta.",
+    "cta": "Become a tester",
+    "fine": "Free · Android · iOS — coming soon",
+    "ctaSubject": "I want to become a ScRoll tester"
   },
   "footer": {
     "tagline": "The tabletop RPG platform — from anywhere in the world.",

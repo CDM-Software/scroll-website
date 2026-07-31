@@ -322,7 +322,12 @@ export function DownloadCta() {
           <h2>{t('title')}</h2>
           <p className="lead">{t('lead')}</p>
           <div className="cta">
-            <a className="btn btn-pri btn-lg" href="#">{PLAY_ICON}{t('cta')}</a>
+            <a
+              className="btn btn-pri btn-lg"
+              href={`mailto:primus@circleofdms.com?subject=${encodeURIComponent(t('ctaSubject'))}`}
+            >
+              {t('cta')}
+            </a>
           </div>
           <div className="fine">{t('fine')}</div>
         </Rise>
