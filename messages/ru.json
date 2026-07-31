@@ -219,7 +219,13 @@
       "Политика конфиденциальности"
     ],
     "social": "Соцсети",
-    "rights": "© {year} ScRoll · Настольные ролевые игры",
-    "madeWith": "сделано с d20 в кармане"
+    "rights": "© {year} circleofdms.com. All rights reserved.",
+    "madeWith": "сделано с d20 в кармане",
+    "legal": {
+      "operated": "Operated by: CDM Software LLC",
+      "address": "Registered Address: 1021 E Lincolnway 10456, Cheyenne, WY 82001, USA",
+      "contactLabel": "Contact Email:",
+      "contactEmail": "primus@circleofdms.com"
+    }
   }
 }

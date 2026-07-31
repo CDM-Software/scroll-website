@@ -376,6 +376,14 @@ export function Footer() {
           <span className="sp" />
           <span>{t('madeWith')}</span>
         </div>
+        <div className="flegal">
+          <span>{t('legal.operated')}</span>
+          <span>{t('legal.address')}</span>
+          <span>
+            {t('legal.contactLabel')}{' '}
+            <a href={`mailto:${t('legal.contactEmail')}`}>{t('legal.contactEmail')}</a>
+          </span>
+        </div>
       </div>
     </footer>
   );

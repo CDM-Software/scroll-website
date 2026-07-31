@@ -147,6 +147,9 @@ a:hover { color: var(--t1); }
 .fcol a:hover { color: var(--t1); }
 .fbot { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--bds); display: flex; gap: 16px; align-items: center; flex-wrap: wrap; font: 400 12.5px var(--mono); color: var(--t3); }
 .fbot .sp { flex: 1; }
+.flegal { margin-top: 14px; display: flex; flex-direction: column; gap: 4px; font: 400 12px var(--mono); color: var(--t3); }
+.flegal a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.flegal a:hover { color: var(--t2); }
 .rise { opacity: 0; transform: translateY(20px); transition: opacity .45s ease-out, transform .45s ease-out; }
 .rise.in { opacity: 1; transform: none; }
 @keyframes pulse { 0%, 100% { opacity: .68; } 50% { opacity: 1; } }
