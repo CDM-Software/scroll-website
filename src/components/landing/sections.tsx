@@ -371,7 +371,6 @@ export function Footer() {
             <h5>{t('social')}</h5>
             <ul>
               <li><a href="#">Telegram</a></li>
-              <li><a href="#">VK</a></li>
               <li><a href="#">YouTube</a></li>
             </ul>
           </div>
