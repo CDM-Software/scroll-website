@@ -2,7 +2,18 @@
   "meta": {
     "title": "ScRoll — tabletop role-playing games from anywhere",
     "description": "The TTRPG platform: find campaigns and one-shots, apply to games, chat with your party and play with verified game masters.",
-    "ogAlt": "ScRoll — the tabletop RPG platform"
+    "keywords": [
+      "tabletop role-playing games",
+      "TTRPG",
+      "D&D",
+      "Dungeons & Dragons",
+      "one-shot",
+      "campaign",
+      "game master",
+      "looking for group",
+      "play online",
+      "ScRoll"
+    ]
   },
   "nav": {
     "how": "How it works",

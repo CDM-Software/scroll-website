@@ -6,9 +6,8 @@ import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 
 import { routing } from '@/i18n/routing';
+import { SITE_NAME, SITE_PUBLISHER, SITE_URL } from '@/lib/site';
 import '../globals.css';
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://scroll.example';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -22,35 +21,50 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'meta' });
 
+  const path = locale === routing.defaultLocale ? '/' : `/${locale}`;
+
   return {
     metadataBase: new URL(SITE_URL),
     title: {
       default: t('title'),
-      template: '%s · ScRoll',
+      template: `%s · ${SITE_NAME}`,
     },
     description: t('description'),
+    applicationName: SITE_NAME,
+    keywords: t.raw('keywords') as string[],
+    publisher: SITE_PUBLISHER,
+    creator: SITE_PUBLISHER,
+    category: 'games',
+    formatDetection: { telephone: false, address: false, email: false },
+    appleWebApp: { capable: true, title: SITE_NAME, statusBarStyle: 'black-translucent' },
     alternates: {
-      canonical: locale === routing.defaultLocale ? '/' : `/${locale}`,
+      canonical: path,
       languages: {
         ru: '/',
         en: '/en',
         'x-default': '/',
       },
     },
+    // og:image и twitter:image подставляет файловая конвенция opengraph-image.tsx.
     openGraph: {
       type: 'website',
-      siteName: 'ScRoll',
+      url: path,
+      siteName: SITE_NAME,
       title: t('title'),
       description: t('description'),
       locale: locale === 'ru' ? 'ru_RU' : 'en_US',
-      images: [{ url: '/og.png', width: 1200, height: 630, alt: t('ogAlt') }],
+      alternateLocale: locale === 'ru' ? 'en_US' : 'ru_RU',
     },
     twitter: {
       card: 'summary_large_image',
       title: t('title'),
       description: t('description'),
     },
-    robots: { index: true, follow: true },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+    },
   };
 }
 
