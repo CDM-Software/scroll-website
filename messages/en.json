@@ -13,7 +13,11 @@
       "looking for group",
       "play online",
       "ScRoll"
-    ]
+    ],
+    "privacyTitle": "Privacy Policy",
+    "privacyDescription": "What data ScRoll collects, why we need it and how to manage it.",
+    "termsTitle": "Terms of Service",
+    "termsDescription": "The rules of using ScRoll: account, conduct, games, payment and liability."
   },
   "nav": {
     "how": "How it works",
@@ -225,11 +229,11 @@
     "tagline": "The tabletop RPG platform — from anywhere in the world.",
     "product": "Product",
     "help": "Help",
-    "helpLinks": [
-      "Support",
-      "Terms of Service",
-      "Privacy Policy"
-    ],
+    "helpLinks": {
+      "support": "Support",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy"
+    },
     "social": "Social",
     "rights": "© {year} circleofdms.com. All rights reserved.",
     "madeWith": "made with a d20 in the pocket",
@@ -238,6 +242,220 @@
       "address": "Registered Address: 1021 E Lincolnway 10456, Cheyenne, WY 82001, USA",
       "contactLabel": "Contact Email:",
       "contactEmail": "primus@circleofdms.com"
+    }
+  },
+  "legal": {
+    "backToHome": "Back to home",
+    "privacy": {
+      "title": "Privacy Policy",
+      "updated": "Last updated August 10, 2026",
+      "intro": "This policy explains what data ScRoll collects, why we need it, and what you can do about it. By using the service you agree to the practices described here.",
+      "sections": [
+        {
+          "title": "1. Who processes your data",
+          "body": [
+            "ScRoll is operated by CDM Software LLC, registered at 1021 E Lincolnway 10456, Cheyenne, WY 82001, USA.",
+            "For any question about personal data write to primus@circleofdms.com — we answer such requests within 30 days."
+          ]
+        },
+        {
+          "title": "2. What we collect",
+          "body": [
+            "Account data: your name or nickname, email address, an encrypted password, and the identifier of an external provider if you sign in through one.",
+            "Profile: avatar, bio, tabletop experience, preferred systems, and anything else you choose to share about yourself.",
+            "Content: game listings, applications, chat messages, reviews and ratings.",
+            "Technical data: IP address, device and operating system type, app version, interface language, and crash or error reports.",
+            "Payments: when a game is paid, an external payment provider handles the transaction. We see the fact, amount and status of a payment, but never your full card details."
+          ]
+        },
+        {
+          "title": "3. Why we need it",
+          "body": [
+            "To run the service: create and maintain your account, show games, process applications, and let players and game masters talk to each other.",
+            "To keep it safe: detect fraud, abuse and rule violations, and handle complaints.",
+            "To help you: answer support requests.",
+            "To improve the product: understand which features are used and fix what breaks.",
+            "To notify you: send messages about applications, games and service changes. You can unsubscribe from marketing messages at any time."
+          ]
+        },
+        {
+          "title": "4. Legal grounds",
+          "body": [
+            "Performance of a contract — data the service cannot work without: your account, participation in games, payments.",
+            "Legitimate interest — security, abuse prevention and product improvement.",
+            "Consent — marketing messages and optional analytics. Consent can be withdrawn.",
+            "Legal obligation — where the law requires us to keep or disclose data."
+          ]
+        },
+        {
+          "title": "5. Who we share it with",
+          "body": [
+            "Infrastructure providers: hosting, file storage, email and push delivery, error monitoring.",
+            "Payment providers — to process transactions.",
+            "Other users — but only the public part of your profile and the content you publish yourself.",
+            "Authorities — where the law requires it.",
+            "We do not sell personal data and do not hand it to third parties for their own advertising."
+          ]
+        },
+        {
+          "title": "6. How long we keep it",
+          "body": [
+            "Account data is kept while the account exists. After you delete your account we erase or anonymise it within 30 days.",
+            "Some records may be kept longer where the law requires it or where they are needed to resolve a dispute — payment records, for example."
+          ]
+        },
+        {
+          "title": "7. Your rights",
+          "body": [
+            "You can request access to your data, correct it, delete it, receive a machine-readable copy, object to certain processing, or withdraw consent.",
+            "Some of this is available directly in the app settings. For the rest, write to primus@circleofdms.com.",
+            "If you believe we process your data unlawfully, you may complain to the supervisory authority in your country."
+          ]
+        },
+        {
+          "title": "8. Children",
+          "body": [
+            "The service is not intended for anyone under 16. We do not knowingly collect children's data. If we learn that an account belongs to a child, we will delete it."
+          ]
+        },
+        {
+          "title": "9. International transfers",
+          "body": [
+            "We work with providers whose servers may be located in other countries, including the USA. Where that happens, we take steps to keep the level of protection intact."
+          ]
+        },
+        {
+          "title": "10. Cookies and similar technologies",
+          "body": [
+            "The site uses technical cookies it cannot work without, and analytics cookies to understand how it is used. Analytics cookies can be disabled in your browser settings."
+          ]
+        },
+        {
+          "title": "11. Security",
+          "body": [
+            "We encrypt data in transit, limit internal access and monitor for incidents. No system is perfectly secure, so protect your password and enable the account safeguards available to you."
+          ]
+        },
+        {
+          "title": "12. Changes to this policy",
+          "body": [
+            "We may update this policy. The date of the last change is shown at the top of this page. We will announce material changes in the app or by email."
+          ]
+        },
+        {
+          "title": "13. How to reach us",
+          "body": [
+            "CDM Software LLC, 1021 E Lincolnway 10456, Cheyenne, WY 82001, USA. Email: primus@circleofdms.com."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "updated": "Last updated August 10, 2026",
+      "intro": "This is an agreement between you and CDM Software LLC about using ScRoll. By creating an account or using the service you accept these terms. If you do not agree with them, do not use the service.",
+      "sections": [
+        {
+          "title": "1. What ScRoll is",
+          "body": [
+            "ScRoll is a platform that helps players find tabletop role-playing games and game masters assemble groups. We provide the venue: search, applications, chats, reviews and payment handling.",
+            "The games themselves are run by game masters, not by us."
+          ]
+        },
+        {
+          "title": "2. Who may use the service",
+          "body": [
+            "You must be at least 16 years old. By registering you confirm that you meet this requirement and are able to enter into this agreement."
+          ]
+        },
+        {
+          "title": "3. Your account",
+          "body": [
+            "Provide accurate information and keep it up to date.",
+            "You are responsible for keeping your password safe and for everything that happens in your account. If you notice unauthorised access, tell us immediately.",
+            "One person, one account. Accounts may not be transferred to anyone else."
+          ]
+        },
+        {
+          "title": "4. Rules of conduct",
+          "body": [
+            "No insults, harassment, threats, discrimination or bullying of any kind.",
+            "No unlawful content and nothing that infringes someone else's rights.",
+            "No spam, unrelated advertising, or attempts to pull users onto other platforms to bypass the service.",
+            "Do not impersonate anyone, circumvent technical restrictions, scrape data or interfere with how the service works.",
+            "Breaking these rules is grounds for restricting or closing your account."
+          ]
+        },
+        {
+          "title": "5. Your content",
+          "body": [
+            "Everything you post stays yours. You are responsible for having the right to post it.",
+            "By posting, you grant us a non-exclusive, royalty-free licence to store and display that content within the service — only as far as running the platform requires.",
+            "We may remove content that breaks these terms or the law."
+          ]
+        },
+        {
+          "title": "6. Games, game masters and payment",
+          "body": [
+            "An arrangement about a specific game is made between the player and the game master. ScRoll is not a party to it and does not guarantee the quality of a game, the behaviour of participants, or that a game will take place at all.",
+            "Where participation is paid, payment is processed by an external provider. The price and conditions are set by the game master and stated in the listing.",
+            "We may retain a service fee — its amount is shown before you pay."
+          ]
+        },
+        {
+          "title": "7. Cancellations and refunds",
+          "body": [
+            "Cancellation terms are stated by the game master in the game listing. If a game does not take place through the game master's fault, the payment is refunded.",
+            "Disputes are handled by support: write to primus@circleofdms.com. We try to judge fairly, but we are not a party to the dispute and are not a substitute for a court."
+          ]
+        },
+        {
+          "title": "8. Our rights in the service",
+          "body": [
+            "The name, logo, interface, texts and code of the service belong to CDM Software LLC. You may not copy, modify or use them without our written permission.",
+            "Names of game systems and other trademarks mentioned belong to their respective owners."
+          ]
+        },
+        {
+          "title": "9. Availability",
+          "body": [
+            "The service is provided as is. We do not promise uninterrupted operation, freedom from errors, or that data will survive a failure — though we do everything reasonable to that end.",
+            "We may change, suspend or discontinue any feature. Where possible we will give notice of material changes in advance."
+          ]
+        },
+        {
+          "title": "10. Limitation of liability",
+          "body": [
+            "To the extent permitted by law, we are not liable for lost profit, lost data or indirect damages arising from your use of the service.",
+            "We are not responsible for the conduct of other users — players or game masters."
+          ]
+        },
+        {
+          "title": "11. Suspension and termination",
+          "body": [
+            "We may restrict or close an account for breaking these terms, breaking the law, or threatening the safety of other users.",
+            "You may delete your account at any time from the app settings."
+          ]
+        },
+        {
+          "title": "12. Governing law and disputes",
+          "body": [
+            "This agreement is governed by the laws of the State of Wyoming, USA, without regard to its conflict-of-law rules. Disputes are heard by the courts of the State of Wyoming, unless mandatory rules of your country provide otherwise."
+          ]
+        },
+        {
+          "title": "13. Changes to these terms",
+          "body": [
+            "We may update these terms. The date of the last change is shown at the top of this page. If you keep using the service after a change, you have accepted it."
+          ]
+        },
+        {
+          "title": "14. Contact us",
+          "body": [
+            "CDM Software LLC, 1021 E Lincolnway 10456, Cheyenne, WY 82001, USA. Email: primus@circleofdms.com."
+          ]
+        }
+      ]
     }
   }
 }

@@ -1,5 +1,7 @@
 import { useTranslations } from 'next-intl';
 
+import { Link } from '@/i18n/navigation';
+
 import { Rise } from './Rise';
 import { Screenshot } from './Screenshot';
 
@@ -339,7 +341,7 @@ export function DownloadCta() {
 export function Footer() {
   const tNav = useTranslations('nav');
   const t = useTranslations('footer');
-  const helpLinks = t.raw('helpLinks') as string[];
+  const supportEmail = t('legal.contactEmail');
   return (
     <footer className="site-footer">
       <div className="wrap">
@@ -362,9 +364,9 @@ export function Footer() {
           <div className="fcol">
             <h5>{t('help')}</h5>
             <ul>
-              {helpLinks.map((link) => (
-                <li key={link}><a href="#">{link}</a></li>
-              ))}
+              <li><a href={`mailto:${supportEmail}`}>{t('helpLinks.support')}</a></li>
+              <li><Link href="/terms">{t('helpLinks.terms')}</Link></li>
+              <li><Link href="/privacy">{t('helpLinks.privacy')}</Link></li>
             </ul>
           </div>
           <div className="fcol">
