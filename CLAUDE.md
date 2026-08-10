@@ -179,6 +179,10 @@ npm run build && npm run seo
 в `.next/server/app/ru/opengraph-image.body` — скопируйте с расширением `.png`
 и посмотрите.
 
+**Подключить Search Console.** Токен из способа «HTML tag» вписать
+в `GOOGLE_SITE_VERIFICATION` в `src/lib/site.ts` и задеплоить. Тег уходит
+на все страницы автоматически; пустая строка = тега нет.
+
 **Заменить иконку.** Исходник `assets/app-icon.png` (1024×1024). Из него
 `sips`-ом делаются `src/app/favicon.ico` (64), `icon.png` (512),
 `apple-icon.png` (180). Теги Next проставляет сам по файловой конвенции.

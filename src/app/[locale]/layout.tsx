@@ -8,7 +8,7 @@ import { JsonLd } from '@/components/seo/JsonLd';
 import { resolveLocale } from '@/i18n/params';
 import { routing } from '@/i18n/routing';
 import { buildSiteSchema } from '@/lib/schema';
-import { SITE_NAME, SITE_PUBLISHER, SITE_URL } from '@/lib/site';
+import { GOOGLE_SITE_VERIFICATION, SITE_NAME, SITE_PUBLISHER, SITE_URL } from '@/lib/site';
 import '../globals.css';
 
 export function generateStaticParams() {
@@ -72,6 +72,8 @@ export async function generateMetadata({
       follow: true,
       googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
     },
+    // Пока токен пустой, тега в разметке нет — Next пропускает undefined.
+    verification: GOOGLE_SITE_VERIFICATION ? { google: GOOGLE_SITE_VERIFICATION } : undefined,
   };
 }
 
