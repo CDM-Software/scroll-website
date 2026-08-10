@@ -15,9 +15,9 @@
       "ScRoll"
     ],
     "privacyTitle": "Privacy Policy",
-    "privacyDescription": "What data ScRoll collects, why we need it and how to manage it.",
+    "privacyDescription": "What data ScRoll collects, why we need it, who we share it with and how to manage it: your rights, retention periods and how to reach us.",
     "termsTitle": "Terms of Service",
-    "termsDescription": "The rules of using ScRoll: account, conduct, games, payment and liability."
+    "termsDescription": "The rules of using ScRoll: your account, conduct, games and game masters, payment and refunds, liability and governing law."
   },
   "nav": {
     "how": "How it works",
@@ -457,5 +457,10 @@
         }
       ]
     }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "This page does not exist — the link may be outdated or the address mistyped.",
+    "cta": "Back to home"
   }
 }

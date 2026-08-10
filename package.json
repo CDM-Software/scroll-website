@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "i18n": "node scripts/i18n-check.mjs",
+    "seo": "node scripts/seo-audit.mjs",
+    "validate": "npm run lint && npm run i18n && npm run build && npm run seo"
   },
   "dependencies": {
     "geist": "^1.7.2",

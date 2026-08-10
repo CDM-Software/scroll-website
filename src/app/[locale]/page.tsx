@@ -1,4 +1,4 @@
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import {
   Community,
@@ -12,7 +12,10 @@ import {
   Players,
   Roadmap,
   Trust,
-} from '@/components/landing/sections';
+} from '@/components/landing';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { resolveLocale } from '@/i18n/params';
+import { buildFaqSchema } from '@/lib/schema';
 import '../landing.css';
 
 export default async function HomePage({
@@ -20,11 +23,15 @@ export default async function HomePage({
 }: {
   params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
+  const locale = await resolveLocale(params);
   setRequestLocale(locale);
+
+  const t = await getTranslations({ locale, namespace: 'faq' });
+  const faqItems = t.raw('items') as { q: string; a: string }[];
 
   return (
     <>
+      <JsonLd data={[buildFaqSchema(faqItems)]} />
       <Nav />
       <main>
         <Hero />

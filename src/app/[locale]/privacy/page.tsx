@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 
 import { LegalDocument } from '@/components/legal/LegalDocument';
+import { resolveLocale } from '@/i18n/params';
 import { routing } from '@/i18n/routing';
 import { buildLegalMetadata } from '@/lib/legal';
 import '../../legal.css';
@@ -15,7 +16,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const { locale } = await params;
+  const locale = await resolveLocale(params);
   return buildLegalMetadata(locale, 'privacy');
 }
 
@@ -24,7 +25,7 @@ export default async function PrivacyPage({
 }: {
   params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
+  const locale = await resolveLocale(params);
   setRequestLocale(locale);
 
   return <LegalDocument name="privacy" />;

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import type { LegalDocumentName } from '@/components/legal/LegalDocument';
-import { routing } from '@/i18n/routing';
+import { routing, type Locale } from '@/i18n/routing';
 
 const LEGAL_PATHS: Record<LegalDocumentName, string> = {
   privacy: '/privacy',
@@ -11,7 +11,7 @@ const LEGAL_PATHS: Record<LegalDocumentName, string> = {
 
 /** Общая обвязка метаданных для правовых страниц — они отличаются только текстом. */
 export async function buildLegalMetadata(
-  locale: string,
+  locale: Locale,
   name: LegalDocumentName,
 ): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'meta' });

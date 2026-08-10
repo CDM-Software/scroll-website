@@ -119,8 +119,8 @@ a:hover { color: var(--t1); }
 .rank .dot { position: relative; z-index: 1; width: 22px; height: 22px; border-radius: 50%; background: var(--bg); border: 1px solid var(--bd); margin: 0 auto 16px; }
 .rank.lit .dot { background: var(--g700); border-color: var(--g600); }
 .rank .rn { font: 500 12px var(--mono); color: var(--t3); text-transform: uppercase; letter-spacing: .12em; }
-.rank h4 { margin: 8px 0 0; font-size: 17px; font-weight: 600; color: var(--t2); }
-.rank.lit h4 { color: var(--t1); }
+.rank h3 { margin: 8px 0 0; font-size: 17px; font-weight: 600; color: var(--t2); }
+.rank.lit h3 { color: var(--t1); }
 .road .rfoot { margin-top: 44px; display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; font: 400 13px var(--mono); color: var(--t3); }
 .faq-wrap { max-width: 880px; }
 .faq-list { margin-top: 48px; border-top: 1px solid var(--bds); }
@@ -141,7 +141,7 @@ a:hover { color: var(--t1); }
 .fgrid { display: flex; gap: 48px; align-items: flex-start; flex-wrap: wrap; }
 .fbrand { margin-right: auto; }
 .fbrand p { margin-top: 14px; font-size: 13.5px; color: var(--t3); max-width: 30ch; }
-.fcol h5 { margin: 0 0 14px; font: 500 12px var(--mono); color: var(--t3); text-transform: uppercase; letter-spacing: .14em; }
+.fcol h3 { margin: 0 0 14px; font: 500 12px var(--mono); color: var(--t3); text-transform: uppercase; letter-spacing: .14em; }
 .fcol ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
 .fcol a { color: var(--t2); font-size: 14.5px; }
 .fcol a:hover { color: var(--t1); }

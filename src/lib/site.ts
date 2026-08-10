@@ -6,4 +6,6 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.circleo
 
 export const SITE_NAME = 'ScRoll';
 
-export const SITE_PUBLISHER = 'Circle of DMs';
+// Юрлицо. Прежние названия (Circle of DMs, CDMS) в текстах запрещены —
+// см. docs/PRODUCT-CONTEXT.md §5.
+export const SITE_PUBLISHER = 'CDM Software LLC';

@@ -1,11 +1,13 @@
-import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
-import { hasLocale, NextIntlClientProvider } from 'next-intl';
+import type { Metadata, Viewport } from 'next';
+import { NextIntlClientProvider } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 
+import { JsonLd } from '@/components/seo/JsonLd';
+import { resolveLocale } from '@/i18n/params';
 import { routing } from '@/i18n/routing';
+import { buildSiteSchema } from '@/lib/schema';
 import { SITE_NAME, SITE_PUBLISHER, SITE_URL } from '@/lib/site';
 import '../globals.css';
 
@@ -13,12 +15,17 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+// Цвет системного UI браузера на мобильных — фон страницы из токенов.
+export const viewport: Viewport = {
+  themeColor: '#171717',
+};
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const { locale } = await params;
+  const locale = await resolveLocale(params);
   const t = await getTranslations({ locale, namespace: 'meta' });
 
   const path = locale === routing.defaultLocale ? '/' : `/${locale}`;
@@ -75,17 +82,19 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) notFound();
+  const locale = await resolveLocale(params);
 
   // Включает статический рендеринг локализованных страниц.
   setRequestLocale(locale);
+
+  const tFooter = await getTranslations({ locale, namespace: 'footer' });
 
   return (
     <html lang={locale} className={`${GeistSans.variable} ${GeistMono.variable}`}>
       {/* suppressHydrationWarning: защитные расширения (Bitdefender и т.п.)
           штампуют DOM атрибутами до гидрейшна — это их шум, не наш баг. */}
       <body suppressHydrationWarning>
+        <JsonLd data={buildSiteSchema(locale, tFooter('legal.contactEmail'))} />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
