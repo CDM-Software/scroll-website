@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Правила для ИИ-агентов — часть репозитория, а не личная настройка.
+# Перебивает глобальный ~/.gitignore, где CLAUDE.md исключён во всех проектах.
+!CLAUDE.md
