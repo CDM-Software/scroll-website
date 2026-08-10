@@ -185,10 +185,14 @@ design-system/                       — выгрузка дизайн-сист�
   не покрывает кириллицу, вместо букв будут квадраты.
 - Иконки собраны из `assets/app-icon.png` через `sips`, теги проставляет
   файловая конвенция Next.
-- **Google Search Console** подключается мета-тегом: токен кладётся
-  в `GOOGLE_SITE_VERIFICATION` в `src/lib/site.ts`. Пока строка пустая, тега
-  в разметке нет. Property в Search Console заводить как URL prefix
-  `https://www.circleofdms.com/` — с `www`, это канонический хост.
+- **Google Search Console** подключён как **Domain property** `circleofdms.com`.
+  Подтверждение прошло по TXT-записи `google-site-verification`, которая уже
+  висела на домене от Google Workspace, — правок в коде не потребовалось.
+  Sitemap там задаётся полным адресом `https://www.circleofdms.com/sitemap.xml`:
+  Domain-ресурс не подставляет префикс и относительный путь не принимает.
+  Про запас есть константа `GOOGLE_SITE_VERIFICATION` в `src/lib/site.ts` —
+  она выводит мета-тег для подтверждения отдельного URL-prefix ресурса.
+  Пока строка пустая, тега в разметке нет.
 
 ## Правовые страницы
 

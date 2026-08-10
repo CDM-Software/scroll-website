@@ -179,9 +179,12 @@ npm run build && npm run seo
 в `.next/server/app/ru/opengraph-image.body` — скопируйте с расширением `.png`
 и посмотрите.
 
-**Подключить Search Console.** Токен из способа «HTML tag» вписать
-в `GOOGLE_SITE_VERIFICATION` в `src/lib/site.ts` и задеплоить. Тег уходит
-на все страницы автоматически; пустая строка = тега нет.
+**Search Console.** Уже подключён: Domain property `circleofdms.com`,
+подтверждён TXT-записью от Google Workspace. Sitemap задаётся полным адресом
+`https://www.circleofdms.com/sitemap.xml` — Domain-ресурс относительный путь
+не принимает. Если понадобится отдельный URL-prefix ресурс, токен из способа
+«HTML tag» вписывается в `GOOGLE_SITE_VERIFICATION` в `src/lib/site.ts`;
+пустая строка = тега нет.
 
 **Заменить иконку.** Исходник `assets/app-icon.png` (1024×1024). Из него
 `sips`-ом делаются `src/app/favicon.ico` (64), `icon.png` (512),
