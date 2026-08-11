@@ -1,5 +1,5 @@
 import type { Locale } from '@/i18n/routing';
-import { SITE_NAME, SITE_PUBLISHER, SITE_URL } from '@/lib/site';
+import { SITE_NAME, SITE_PUBLISHER, SITE_URL, SOCIAL_LINKS } from '@/lib/site';
 
 type JsonLdObject = Record<string, unknown>;
 
@@ -27,6 +27,9 @@ export function buildSiteSchema(locale: Locale, contactEmail: string): JsonLdObj
       logo: `${SITE_URL}/icon.png`,
       email: contactEmail,
       address: LEGAL_ADDRESS,
+      // Те же ссылки, что и в футере: правило «размечать только видимое»
+      // соблюдается ровно потому, что источник один — SOCIAL_LINKS.
+      sameAs: SOCIAL_LINKS.map((social) => social.url),
     },
     {
       '@context': 'https://schema.org',

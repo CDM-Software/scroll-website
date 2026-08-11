@@ -11,6 +11,21 @@ export const SITE_NAME = 'ScRoll';
 export const SITE_PUBLISHER = 'CDM Software LLC';
 
 /**
+ * Официальные аккаунты бренда. Названия площадок не переводятся, поэтому
+ * лежат здесь, а не в messages: один список кормит и футер, и `sameAs`
+ * в разметке организации — иначе адреса разъедутся между ними.
+ *
+ * Порядок = порядок вывода в футере: сначала то, где живёт сообщество.
+ */
+export const SOCIAL_LINKS = [
+  { name: 'Telegram', url: 'https://t.me/circleofdms' },
+  { name: 'YouTube', url: 'https://www.youtube.com/channel/UCKZm6OqhTa7eZFn3X27svRQ' },
+  { name: 'Twitch', url: 'https://www.twitch.tv/cmdshows' },
+  { name: 'TikTok', url: 'https://www.tiktok.com/@cdmshows' },
+  { name: 'Instagram', url: 'https://www.instagram.com/cdmshows/' },
+] as const;
+
+/**
  * Токен подтверждения прав в Google Search Console (способ «HTML tag»).
  * Значение публичное — оно и так уходит в разметку каждой страницы.
  * Пустая строка = тег не выводится.
