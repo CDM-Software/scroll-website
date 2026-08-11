@@ -159,12 +159,12 @@
     "lead": "Events, editorial guides and platform news — right in the app.",
     "cards": [
       {
-        "badge": "Event",
-        "title": "Talks & meetups",
-        "text": "Contests, talks and community meetups — with participation and discussions."
+        "badge": "Events",
+        "title": "Workshops & community",
+        "text": "Workshops, contests and community meetups — with participation and discussions."
       },
       {
-        "badge": "Guide",
+        "badge": "Guides",
         "title": "Guides for beginners",
         "text": "How to pick a system, build a character and not fear your first roll."
       },
@@ -176,9 +176,9 @@
     ]
   },
   "roadmap": {
-    "kicker": "What's next",
-    "title": "The hero's path is already mapped",
-    "lead": "Play, collect reviews and climb the ranks — gamification is in the works.",
+    "kicker": "The master's path",
+    "title": "More games — higher rank",
+    "lead": "Run games, collect good reviews and climb the ranks. Your rank raises the minimum price of your session — reputation starts working for you. In the works.",
     "rankLabel": "rank {num}",
     "ranks": [
       "Neophyte",
