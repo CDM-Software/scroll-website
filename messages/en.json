@@ -42,17 +42,17 @@
     "steps": [
       {
         "title": "Find a game",
-        "text": "A feed of games with filters by system, genre, format and price. D&D 5e or Cyberpunk RED, one-shot or campaign — with a beginner-friendly badge.",
+        "text": "A feed of games with filters by system, genre, price and format. D&D or Cyberpunk, one-shot or campaign, free or paid, online or in person. New to this? Look for the beginner-friendly badge.",
         "slot": "ScRoll app screen: game search filters"
       },
       {
         "title": "Apply",
-        "text": "The master approves — and you're in the party. No seats? The waitlist moves you up automatically, and you see your status in real time.",
+        "text": "Apply — and watch the master's response live. And the waitlist saves you a place in a game that hasn't even been announced yet.",
         "slot": "ScRoll app screen: game page and application"
       },
       {
         "title": "Play",
-        "text": "The party chat is created automatically. Agree on the time — and get to the table, online or in person.",
+        "text": "The master approves — and you're added to the party chat automatically. Agree on a time right there: online or at the nearest board game club.",
         "slot": "ScRoll app screen: party chat"
       }
     ]
@@ -67,12 +67,12 @@
         "text": "System, genre, format, price and date. Free-only, beginner-friendly — slice it your way."
       },
       {
-        "title": "Applications & waitlist",
-        "text": "Apply — the master approves — you're in. No seats? The waitlist moves you up automatically."
+        "title": "Waitlist",
+        "text": "The waitlist tells the master you're waiting for the next game or announcement. Gathering a party gets easier for both sides."
       },
       {
-        "title": "Party chats",
-        "text": "The game chat is created automatically and runs in real time. Plus private and group chats."
+        "title": "Built-in messenger",
+        "text": "Talk to your party and your master without leaving for third-party platforms. And follow any authors right in the app."
       },
       {
         "title": "Honest ratings",
@@ -102,17 +102,17 @@
       {
         "num": "01 / create",
         "title": "Publish games",
-        "text": "Describe your campaign or one-shot, set the format and price. Draft → moderation → live in the feed."
+        "text": "Describe your campaign or one-shot, set the format and price, pass platform moderation — then admire your game in the feed."
       },
       {
         "num": "02 / manage",
         "title": "Applications under control",
-        "text": "Approve players, run the waitlist, build the roster. No spreadsheets and no five messengers."
+        "text": "Approve players, run the waitlist, build the roster. No spreadsheets and no five messengers — everything lives inside ScRoll."
       },
       {
         "num": "03 / grow",
         "title": "Reputation & verification",
-        "text": "A profile with player ratings and reviews. Platform verification is a mark of quality for new players."
+        "text": "A profile with player ratings and reviews. We vet verified masters ourselves — and we vouch for the quality."
       }
     ],
     "soonTag": "soon",
@@ -128,7 +128,7 @@
       },
       {
         "bold": "Master verification.",
-        "text": "The platform's mark for those you can trust with the table."
+        "text": "A master can get verified — for you that's a guarantee of quality."
       },
       {
         "bold": "Reviews from real players.",
@@ -144,12 +144,12 @@
       {
         "value": "1–5",
         "accent": "",
-        "label": "master rating after every session"
+        "label": "stars the master gets after every session"
       },
       {
         "value": "0",
         "accent": "₽",
-        "label": "for finding games and applying — always"
+        "label": "for finding games and applying"
       }
     ]
   },
@@ -165,8 +165,8 @@
       },
       {
         "badge": "Guides",
-        "title": "Guides for beginners",
-        "text": "How to pick a system, build a character and not fear your first roll."
+        "title": "Guides for beginners and veterans",
+        "text": "How do you pick a system? Build a character? Prep an interesting encounter? Or pull the whole party into the story?"
       },
       {
         "badge": "News",
@@ -206,7 +206,7 @@
       },
       {
         "q": "Which systems are supported?",
-        "a": "Any TTRPG: D&D 5e, Cyberpunk RED and more. The system is shown on the game card and powers the feed filter."
+        "a": "Any TTRPG: from D&D 5e to Cyberpunk RED. The system is shown on the game card and powers the feed filter."
       },
       {
         "q": "Can beginners play?",
