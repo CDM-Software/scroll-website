@@ -37,10 +37,10 @@ export default async function HomePage({
         <Hero />
         <How />
         <Players />
-        <Masters />
         <Trust />
-        <Community />
+        <Masters />
         <Roadmap />
+        <Community />
         <Faq />
         <DownloadCta />
       </main>

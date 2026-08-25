@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import { SOCIAL_LINKS } from '@/lib/site';
 
 export function Footer() {
   const tNav = useTranslations('nav');
@@ -35,8 +36,13 @@ export function Footer() {
           <div className="fcol">
             <h3>{t('social')}</h3>
             <ul>
-              <li><a href="#">Telegram</a></li>
-              <li><a href="#">YouTube</a></li>
+              {SOCIAL_LINKS.map((social) => (
+                <li key={social.name}>
+                  <a href={social.url} target="_blank" rel="noopener noreferrer">
+                    {social.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
