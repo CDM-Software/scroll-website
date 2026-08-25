@@ -37,8 +37,8 @@ export default async function HomePage({
         <Hero />
         <How />
         <Players />
-        <Masters />
         <Trust />
+        <Masters />
         <Roadmap />
         <Community />
         <Faq />
