@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 
 import { Link } from '@/i18n/navigation';
 
-export type LegalDocumentName = 'privacy' | 'terms';
+export type LegalDocumentName = 'privacy' | 'terms' | 'csae';
 
 type LegalSection = {
   title: string;

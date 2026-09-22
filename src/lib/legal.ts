@@ -7,6 +7,7 @@ import { routing, type Locale } from '@/i18n/routing';
 const LEGAL_PATHS: Record<LegalDocumentName, string> = {
   privacy: '/privacy',
   terms: '/terms',
+  csae: '/csae',
 };
 
 /** Общая обвязка метаданных для правовых страниц — они отличаются только текстом. */
