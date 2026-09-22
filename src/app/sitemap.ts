@@ -3,7 +3,7 @@ import type { MetadataRoute } from 'next';
 import { SITE_URL } from '@/lib/site';
 
 // ru живёт на корне, en — с префиксом: см. localePrefix: 'as-needed' в routing.
-const PATHS = ['', '/privacy', '/terms'];
+const PATHS = ['', '/privacy', '/terms', '/csae'];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();

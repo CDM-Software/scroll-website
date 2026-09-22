@@ -31,6 +31,7 @@ export function Footer() {
               <li><a href={`mailto:${supportEmail}`}>{t('helpLinks.support')}</a></li>
               <li><Link href="/terms">{t('helpLinks.terms')}</Link></li>
               <li><Link href="/privacy">{t('helpLinks.privacy')}</Link></li>
+              <li><Link href="/csae">{t('helpLinks.csae')}</Link></li>
             </ul>
           </div>
           <div className="fcol">
